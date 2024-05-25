@@ -1,8 +1,11 @@
 import React from "react";
 
-export default function Portfolio() {
+export default function Portfolio({ active }) {
   return (
-    <article className="portfolio" data-page="portfolio">
+    <article
+      className={`portfolio ${active.portfolio && "active"} `}
+      data-page="portfolio"
+    >
       <header>
         <h2 className="h2 article-title">Portfolio</h2>
       </header>

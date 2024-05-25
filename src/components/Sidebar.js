@@ -36,8 +36,11 @@ export default function Sidebar() {
             <div className="contact-info">
               <p className="contact-title">Email</p>
 
-              <a href="mailto:richard@example.com" className="contact-link">
-                richard@example.com
+              <a
+                href="mailto:sanjaykhatri906@gmail.com"
+                className="contact-link"
+              >
+                sanjaykhatri906@gmail.com
               </a>
             </div>
           </li>
@@ -51,7 +54,7 @@ export default function Sidebar() {
               <p className="contact-title">Phone</p>
 
               <a href="tel:+12133522795" className="contact-link">
-                +1 (213) 352-2795
+                +61 406087341
               </a>
             </div>
           </li>
@@ -64,7 +67,7 @@ export default function Sidebar() {
             <div className="contact-info">
               <p className="contact-title">Birthday</p>
 
-              <time datetime="1982-06-23">June 23, 1982</time>
+              <time datetime="1982-06-23">Oct 8, 1998</time>
             </div>
           </li>
 
@@ -76,7 +79,7 @@ export default function Sidebar() {
             <div className="contact-info">
               <p className="contact-title">Location</p>
 
-              <address>Sacramento, California, USA</address>
+              <address>Sydney, Australia</address>
             </div>
           </li>
         </ul>
