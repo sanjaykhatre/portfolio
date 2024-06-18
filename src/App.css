@@ -113,6 +113,12 @@ span {
   display: block;
 }
 
+.portfolio img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
 button {
   font: inherit;
   background: none;
@@ -120,6 +126,46 @@ button {
   text-align: left;
   cursor: pointer;
 }
+
+/* .navbar-item button {
+  transition: 0.5s;
+  letter-spacing: 3px;
+}
+
+.navbar-item button:hover {
+  background: #00fffc;
+  color: #0000;
+  box-shadow: 0 0 5px #00fffc 0 0 25px #00fffc 0 0 50px #00fffc 0 0 200px #00fffc;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #005);
+
+
+
+}
+
+.navbar-item:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+
+.navbar-item:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+
+.navbar-item span {
+  position: absolute;
+  display: block;
+}
+
+.navbar-item span:nth-child(1) {
+  background: linear-gradient(90deg, trasnparent, #00fffc);
+  animation: btn1 1s linear infinite;
+}
+
+@keyframes btn1 {
+  0% {
+    left: -100%;
+  }
+
+} */
 
 input,
 textarea {
@@ -1084,10 +1130,7 @@ article.active {
   transition: var(--transition-1);
 }
 
-.project-item>a:hover .project-item-icon-box {
-  --scale: 1;
-  opacity: 1;
-}
+
 
 .project-item-icon-box ion-icon {
   --ionicon-stroke-width: 50px;

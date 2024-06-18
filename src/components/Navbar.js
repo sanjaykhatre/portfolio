@@ -6,6 +6,9 @@ export default function Navbar({ active, handleChange }) {
     <nav className="navbar">
       <ul className="navbar-list">
         <li className="navbar-item">
+          <span></span>
+          <span></span>
+          <span></span>
           <button
             className={`navbar-link ${active.about && "active"} `}
             onClick={() => {
@@ -17,6 +20,9 @@ export default function Navbar({ active, handleChange }) {
         </li>
 
         <li className="navbar-item">
+          <span></span>
+          <span></span>
+          <span></span>
           <button
             className={`navbar-link ${active.resume && "active"} `}
             onClick={() => {
@@ -27,24 +33,32 @@ export default function Navbar({ active, handleChange }) {
           </button>
         </li>
         <li className="navbar-item">
+          <span></span>
+          <span></span>
+          <span></span>
           <button
             className={`navbar-link ${active.portfolio && "active"} `}
             onClick={() => {
               handleChange("portfolio");
             }}
           >
-            Portfolio
+            Projects
           </button>
         </li>
 
-        <li
-          className={`navbar-link ${active.contact && "active"} `}
-          onClick={() => {
-            handleChange("contact");
-          }}
-        >
-          <button className="navbar-link">Contact</button>
-        </li>
+        {/* <li className="navbar-item">
+          <span></span>
+          <span></span>
+          <span></span>
+          <button
+            className={`navbar-link ${active.contact && "active"} `}
+            onClick={() => {
+              handleChange("contact");
+            }}
+          >
+            Contact
+          </button>
+        </li> */}
       </ul>
     </nav>
   );

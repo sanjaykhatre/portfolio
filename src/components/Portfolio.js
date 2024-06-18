@@ -1,4 +1,7 @@
 import React from "react";
+import programizLogo from "../assets/images/programizLogo.svg";
+import curaHealth from "../assets/images/curaHealth.png";
+import sewa from "../assets/images/sewa360.png";
 
 export default function Portfolio({ active }) {
   return (
@@ -7,30 +10,10 @@ export default function Portfolio({ active }) {
       data-page="portfolio"
     >
       <header>
-        <h2 className="h2 article-title">Portfolio</h2>
+        <h2 className="h2 article-title">Projects</h2>
       </header>
 
       <section className="projects">
-        <ul className="filter-list">
-          <li className="filter-item">
-            <button className="active" data-filter-btn>
-              All
-            </button>
-          </li>
-
-          <li className="filter-item">
-            <button data-filter-btn>Web design</button>
-          </li>
-
-          <li className="filter-item">
-            <button data-filter-btn>Applications</button>
-          </li>
-
-          <li className="filter-item">
-            <button data-filter-btn>Web development</button>
-          </li>
-        </ul>
-
         <div className="filter-select-box">
           <button className="filter-select" data-select>
             <div className="select-value" data-selecct-value>
@@ -46,18 +29,6 @@ export default function Portfolio({ active }) {
             <li className="select-item">
               <button data-select-item>All</button>
             </li>
-
-            <li className="select-item">
-              <button data-select-item>Web design</button>
-            </li>
-
-            <li className="select-item">
-              <button data-select-item>Applications</button>
-            </li>
-
-            <li className="select-item">
-              <button data-select-item>Web development</button>
-            </li>
           </ul>
         </div>
 
@@ -67,20 +38,16 @@ export default function Portfolio({ active }) {
             data-filter-item
             data-category="web development"
           >
-            <a href="#">
+            <a href="https://www.programiz.com/html/online-compiler/">
               <figure className="project-img">
                 <div className="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
 
-                <img
-                  src="./assets/images/project-1.jpg"
-                  alt="finance"
-                  loading="lazy"
-                />
+                <img src={programizLogo} alt="P" loading="lazy" />
               </figure>
 
-              <h3 className="project-title">Finance</h3>
+              <h3 className="project-title">Online Html Editor </h3>
 
               <p className="project-category">Web development</p>
             </a>
@@ -91,46 +58,41 @@ export default function Portfolio({ active }) {
             data-filter-item
             data-category="web development"
           >
-            <a href="#">
+            <a href="https://www.programiz.com/sql/online-compiler/">
               <figure className="project-img">
                 <div className="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
 
-                <img
-                  src="./assets/images/project-2.png"
-                  alt="orizon"
-                  loading="lazy"
-                />
+                <img src={programizLogo} alt="orizon" loading="lazy" />
               </figure>
 
-              <h3 className="project-title">Orizon</h3>
+              <h3 className="project-title"> Online SQL Compiler</h3>
 
               <p className="project-category">Web development</p>
             </a>
           </li>
-
+          <br />
           <li
             className="project-item  active"
             data-filter-item
             data-category="web design"
           >
-            <a href="#">
+            <a href="https://play.google.com/store/apps/details?id=com.curahealth&hl=en&gl=US&pli=1">
               <figure className="project-img">
                 <div className="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
 
-                <img
-                  src="./assets/images/project-3.jpg"
-                  alt="fundo"
-                  loading="lazy"
-                />
+                <img src={curaHealth} alt="Cura Health" loading="lazy" />
               </figure>
 
-              <h3 className="project-title">Fundo</h3>
+              <h3 className="project-title">Cura Health</h3>
 
-              <p className="project-category">Web design</p>
+              <p className="project-category">
+                {" "}
+                Telemedicine app- Cura Health (Admin side and Backend )
+              </p>
             </a>
           </li>
 
@@ -139,142 +101,18 @@ export default function Portfolio({ active }) {
             data-filter-item
             data-category="applications"
           >
-            <a href="#">
+            <a href="https://app.sewa360.com/">
               <figure className="project-img">
                 <div className="project-item-icon-box">
                   <ion-icon name="eye-outline"></ion-icon>
                 </div>
 
-                <img
-                  src="./assets/images/project-4.png"
-                  alt="brawlhalla"
-                  loading="lazy"
-                />
+                <img src={sewa} alt="Sewa360" loading="lazy" />
               </figure>
 
-              <h3 className="project-title">Brawlhalla</h3>
+              <h3 className="project-title">Sewa360 </h3>
 
-              <p className="project-category">Applications</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img
-                  src="./assets/images/project-5.png"
-                  alt="dsm."
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">DSM.</h3>
-
-              <p className="project-category">Web design</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web design"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img
-                  src="./assets/images/project-6.png"
-                  alt="metaspark"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">MetaSpark</h3>
-
-              <p className="project-category">Web design</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img
-                  src="./assets/images/project-7.png"
-                  alt="summary"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">Summary</h3>
-
-              <p className="project-category">Web development</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="applications"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img
-                  src="./assets/images/project-8.jpg"
-                  alt="task manager"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">Task Manager</h3>
-
-              <p className="project-category">Applications</p>
-            </a>
-          </li>
-
-          <li
-            className="project-item  active"
-            data-filter-item
-            data-category="web development"
-          >
-            <a href="#">
-              <figure className="project-img">
-                <div className="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-
-                <img
-                  src="./assets/images/project-9.png"
-                  alt="arrival"
-                  loading="lazy"
-                />
-              </figure>
-
-              <h3 className="project-title">Arrival</h3>
-
-              <p className="project-category">Web development</p>
+              <p className="project-category">Web Application</p>
             </a>
           </li>
         </ul>

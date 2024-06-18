@@ -23,6 +23,7 @@ function App() {
       [activeBar]: true,
     });
   }
+  // ToDo: add animation
   return (
     <div className="app">
       <Sidebar />

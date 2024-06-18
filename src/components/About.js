@@ -1,5 +1,7 @@
 import React from "react";
-
+import webDesign from "../assets/images/icon-design.svg";
+import webDevelopment from "../assets/images/icon-dev.svg";
+import mobileApp from "../assets/images/icon-app.svg";
 export default function About({ active }) {
   return (
     <article className={`about ${active.about && "active"} `} data-page="about">
@@ -9,18 +11,9 @@ export default function About({ active }) {
 
       <section className="about-text">
         <p>
-          I'm Creative Director and UI/UX Designer from Sydney, Australia,
-          working in web development and print media. I enjoy turning complex
-          problems into simple, beautiful and intuitive designs.
-        </p>
-
-        <p>
-          My job is to build your website so that it is functional and
-          user-friendly but at the same time attractive. Moreover, I add
-          personal touch to your product and make sure that is eye-catching and
-          easy to use. My aim is to bring across your message and identity in
-          the most creative way. I created web design for many famous brand
-          companies.
+          Software engineer with over 3 years of application development
+          experience. Looking for a Co-Op or internship or entry level position.
+          I am open to relocating for the right opportunity.
         </p>
       </section>
 
@@ -30,12 +23,7 @@ export default function About({ active }) {
         <ul className="service-list">
           <li className="service-item">
             <div className="service-icon-box">
-              <img
-                src="./assets/images/icon-design.svg
-    "
-                alt="design icon"
-                width="40"
-              />
+              <img src={webDesign} alt="design icon" width="40" />
             </div>
 
             <div className="service-content-box">
@@ -50,11 +38,7 @@ export default function About({ active }) {
 
           <li className="service-item">
             <div className="service-icon-box">
-              <img
-                src="./assets/images/icon-dev.svg"
-                alt="Web development icon"
-                width="40"
-              />
+              <img src={webDevelopment} alt="Web development icon" width="40" />
             </div>
 
             <div className="service-content-box">
@@ -68,11 +52,7 @@ export default function About({ active }) {
 
           <li className="service-item">
             <div className="service-icon-box">
-              <img
-                src="./assets/images/icon-app.svg"
-                alt="mobile app icon"
-                width="40"
-              />
+              <img src={mobileApp} alt="mobile app icon" width="40" />
             </div>
 
             <div className="service-content-box">
@@ -80,25 +60,6 @@ export default function About({ active }) {
 
               <p className="service-item-text">
                 Professional development of applications for iOS and Android.
-              </p>
-            </div>
-          </li>
-
-          <li className="service-item">
-            <div className="service-icon-box">
-              <img
-                src="./assets/images/icon-photo.svg"
-                alt="camera icon"
-                width="40"
-              />
-            </div>
-
-            <div className="service-content-box">
-              <h4 className="h4 service-item-title">Photography</h4>
-
-              <p className="service-item-text">
-                I make high-quality photos of any category at a professional
-                level.
               </p>
             </div>
           </li>
