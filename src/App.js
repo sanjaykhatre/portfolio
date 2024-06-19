@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import About from "./components/About";
+import Navbar from "./components/Navbar";
+import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
+import Sidebar from "./components/Sidebar";
 
 function App() {
+  const [active, setActive] = useState({
+    about: true,
+    resume: false,
+    portfolio: false,
+    contact: false,
+  });
+  function handleChange(activeBar) {
+    console.log({ activeBar });
+    setActive({
+      about: false,
+      resume: false,
+      portfolio: false,
+      contact: false,
+      [activeBar]: true,
+    });
+  }
+  // ToDo: add animation
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Sidebar />
+      <div className="main-content">
+        <Navbar active={active} handleChange={handleChange} />
+        <About active={active} />
+        <Resume active={active} />
+        <Portfolio active={active} />
+      </div>
     </div>
   );
 }
